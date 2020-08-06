@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { type } from 'os'
 
 type VerticalContainerProps = {
   className: string
