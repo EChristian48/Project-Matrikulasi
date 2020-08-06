@@ -34,8 +34,8 @@
 | ---------- | ---------- | ---------- |
 | Guru       | guru       | guru       |
 | Kurikulum  | kurikulum  | kurikulum  |
-| supervisor | supervisor | supervisor |
-| kepsek     | kepsek     | kepsek     |
+| Supervisor | supervisor | supervisor |
+| Kepsek     | kepsek     | kepsek     |
 
 ---
 
