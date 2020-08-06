@@ -5,8 +5,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import List from 'react-bootstrap/ListGroup'
 import Table from 'react-bootstrap/Table'
+import Button from 'react-bootstrap/Button'
 
-const SuperList: React.FC = () => {
+const KurikList: React.FC = () => {
   return (
     <Container className='mt-4'>
       <Row>
@@ -22,7 +23,7 @@ const SuperList: React.FC = () => {
                 <th>No.</th>
                 <th>Nama Guru</th>
                 <th>Mapel</th>
-                <th>Dokumen</th>
+                <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
@@ -31,7 +32,9 @@ const SuperList: React.FC = () => {
                   <td>1</td>
                   <td>Pak Budi</td>
                   <td>PKCS + BKGS</td>
-                  <td>Link</td>
+                  <td>
+                    <Button>Angkat Supervisor</Button>
+                  </td>
                 </tr>
               )}
             </tbody>
@@ -42,4 +45,4 @@ const SuperList: React.FC = () => {
   )
 }
 
-export { SuperList }
+export { KurikList }

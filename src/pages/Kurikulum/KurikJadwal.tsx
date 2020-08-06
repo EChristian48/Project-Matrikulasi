@@ -5,8 +5,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import List from 'react-bootstrap/ListGroup'
 import Table from 'react-bootstrap/Table'
+import Button from 'react-bootstrap/Button'
 
-const SuperList: React.FC = () => {
+const KurikJadwal: React.FC = () => {
   return (
     <Container className='mt-4'>
       <Row>
@@ -19,27 +20,32 @@ const SuperList: React.FC = () => {
           <Table bordered striped hover responsive>
             <thead>
               <tr>
-                <th>No.</th>
-                <th>Nama Guru</th>
-                <th>Mapel</th>
-                <th>Dokumen</th>
+                <th>Jam</th>
+                <th>RPL</th>
+                <th>TKJ</th>
+                <th>MMD</th>
               </tr>
             </thead>
             <tbody>
               {Array<JSX.Element>(9).fill(
                 <tr>
                   <td>1</td>
-                  <td>Pak Budi</td>
-                  <td>PKCS + BKGS</td>
-                  <td>Link</td>
+                  <td>190</td>
+                  <td>402</td>
+                  <td>003</td>
                 </tr>
               )}
             </tbody>
           </Table>
+          <Row>
+            <Col>
+              <Button>Edit Jadwal</Button>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>
   )
 }
 
-export { SuperList }
+export { KurikJadwal }

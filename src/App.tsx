@@ -6,6 +6,8 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import { LoginPage } from './pages/LoginPage'
 import { GuruDashboard } from './pages/Guru/GuruDashboard'
 import { SuperDashboard } from './pages/Supervisor/SuperDashboard'
+import { KurikDashboard } from './pages/Kurikulum/KurikDashboard'
+import { KepsekDashboard } from './pages/Kepsek/KepsekDashboard'
 
 const App: React.FC = () => {
   return (
@@ -19,9 +21,13 @@ const App: React.FC = () => {
           <SuperDashboard />
         </Route>
 
-        <Route path='/kurikulum'>Kurikulum</Route>
+        <Route path='/kurikulum'>
+          <KurikDashboard />
+        </Route>
 
-        <Route path='/kepsek'>Kepsek</Route>
+        <Route path='/kepsek'>
+          <KepsekDashboard />
+        </Route>
 
         <Route path='/'>
           <LoginPage />
