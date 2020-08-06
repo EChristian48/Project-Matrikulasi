@@ -12,6 +12,14 @@ const App: React.FC = () => {
         <Route path='/login'>
           <LoginPage />
         </Route>
+
+        <Route path='/guru'>Guru</Route>
+
+        <Route path='/supervisor'>Supervisor</Route>
+
+        <Route path='/kurikulum'>Kurikulum</Route>
+
+        <Route path='/kepsek'>Kepsek</Route>
       </Switch>
     </Router>
   )
